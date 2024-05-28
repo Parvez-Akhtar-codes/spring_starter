@@ -1,4 +1,4 @@
-package org.studyeasy.spring_starter.Models;
+package org.studyeasy.SpringStarter.models;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long id;
+    private Long id;
 
     private String email;
 
@@ -29,7 +29,7 @@ public class Account {
 
     @OneToMany(mappedBy = "account")
     private List<Post> posts;
-
+   
 
     
 }
